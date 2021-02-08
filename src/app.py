@@ -29,7 +29,7 @@ def sitemap():
 @app.route('/members', methods=['GET'])
 @app.route('/member', methods=['POST'])
 @app.route('/member/<int:id>', methods=['GET', 'DELETE', 'PUT'])
-def handle_hello(id = None):
+def handle_everything(id = None):
 
     if request.method == 'GET':       
         if id == None:
